@@ -1,0 +1,3 @@
+# On spinning hard drives (rotational=1), use the BFQ scheduler.
+# BFQ is the one that respects the disk priorities above.
+SUBSYSTEM=="block", ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="1", ATTR{queue/scheduler}="bfq"

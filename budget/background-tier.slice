@@ -1,0 +1,15 @@
+# THE BACKGROUND TIER
+# Everything in the background-services.txt list runs inside this group.
+#
+# "Weight" = share of priority. Default for normal stuff is 100.
+# Lower number = it waits when something else needs the CPU or disk.
+
+[Slice]
+CPUWeight=20
+IOWeight=20
+
+# Memory: "High" is a soft limit (slows things down past this point).
+# "Max" is a hard limit (a safety net). Percent of the PC's total RAM,
+# so the same file works on a 2 GB laptop and a 16 GB one.
+MemoryHigh=30%
+MemoryMax=60%

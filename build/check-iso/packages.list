@@ -1,0 +1,3 @@
+# Extra programs inside the Check USB. Kept tiny on purpose.
+# pciutils is for the graphics-card check we'll add later.
+pciutils

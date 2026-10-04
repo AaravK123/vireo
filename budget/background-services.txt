@@ -1,0 +1,12 @@
+# One service name per line. Lines starting with # are ignored.
+
+# Updaters
+apt-daily.service
+apt-daily-upgrade.service
+packagekit.service
+fwupd-refresh.service
+
+# Indexers and housekeeping
+plocate-updatedb.service
+man-db.service
+e2scrub_all.service
